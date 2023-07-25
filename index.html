@@ -7,6 +7,16 @@
       <!-- Tailwind AnD DaisyUI Setup -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
+
       <!-- Tailwind Config -->
 <script>
     tailwind.config = {
@@ -20,7 +30,50 @@
     }
   </script>
 </head>
-<body>
+<body class="font-lato">
+    <header>
+        <nav class=" lg:container lg:mx-44  max-auto ">
+            <div class="navbar my-5 lg:px-36 rounded-full bg-[#F85559] ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                      </ul>
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-white font-medium text-lg menu-horizontal  px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="navbar-center">
+                    <img src="./images/logo.png" class="w-10" alt="fruit-brust">
+                  <a class="btn btn-ghost normal-case text-white font-bold text-4xl">Fruit Burst</a>
+                </div>
+                
+                
+                <div class="navbar-end hidden lg:flex">
+                    <div class="form-control relative">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24   md:w-auto " />
+                      </div>
+                  <button class="btn absolute btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  
+                </div>
+              </div>
+        </nav>
+    </header>
     
 </body>
 </html>
