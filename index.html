@@ -18,22 +18,23 @@
 </style>
 
       <!-- Tailwind Config -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage: {
+                'hero-bg': "url('./images/banner1.png')",
+              },
+            },
+          },
         }
-      }
-    }
-  </script>
+      </script>
 </head>
 <body class="font-lato">
+    <!-- Nav Section -->
     <header>
         <nav class=" container mx-auto   ">
-            <div class="navbar my-5 lg:px-14 rounded-full bg-[#F85559] ">
+            <div class="navbar lg:my-5 lg:px-14 rounded-full bg-[#F85559] ">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -47,7 +48,7 @@
                       </ul>
                   </div>
                   <div class="navbar-center hidden lg:flex">
-                    <ul class="menu mr-72  text-white font-medium text-lg menu-horizontal  px-1">
+                    <ul class="menu   text-white font-medium text-lg menu-horizontal  px-1">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -74,6 +75,64 @@
               </div>
         </nav>
     </header>
+   
+    <main>
+    <!-- Slide Banner Section-->
+    <section class="  mx-5  lg:container lg:mx-auto">
+        <div class=" my-5 carousel w-full">
+            
+  <div id="slide1" class="  carousel-item relative w-full">
+    <div class="absolute  lg:space-y-3 text-center left-8 top-5 md:left-52 md:top-28 lg:left-52 lg:ml-20 lg:top-40">
+        <h3 class="text-white text-2xl md:text-5xl md:font-bold lg:text-7xl lg:font-extrabold">
+            Exotic tastes at your
+            <br>
+             doorstep
+        </h3>
+        <p class="text-white lg:text-xl lg:font-semibold">
+            We supply highly quality organic products
+        </p>
+        <button class="btn bg-[#F85559] text-white">Shop Now</button>
+    </div>
+    
+   <div class="opacity-98">
+    <img src="./images/banner1.png" class="w-full" />
+   </div>
+    
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+    
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="./images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="./images/banner3.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="./images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    </main>
+    <div class="">
+
+    </div>
     
 </body>
 </html>
